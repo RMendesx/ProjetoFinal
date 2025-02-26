@@ -1,4 +1,4 @@
 [wokwi]
 version = 1
-firmware = 'ProjetoFinal.hex'
-elf = 'ProjetoFinal.elf
+firmware = 'build/ProjetoFinal.hex'
+elf = 'build/ProjetoFinal.elf'
