@@ -7,6 +7,8 @@
 #define LED_RED_PIN 13    // Pino para o LED vermelho
 #define LED_GREEN_PIN 11  // Pino para o LED verde
 
+const int TEMPO_ESPERA = 10000;
+
 int main() {
     // Inicializa os pinos dos buzzers como saída
     gpio_init(BUZZER_PIN_1);
@@ -35,7 +37,7 @@ int main() {
         gpio_put(BUZZER_PIN_2, 0);  // Desliga o buzzer 2
         
         // Espera 10 segundos
-        sleep_ms(10000);
+        sleep_ms(TEMPO_ESPERA);
 
         // Fase 2: Desliga o LED vermelho, liga o LED verde e os buzzers
         gpio_put(LED_RED_PIN, 0);   // Desliga o LED vermelho
